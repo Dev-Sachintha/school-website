@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Students - ch/senanayaka central college</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Removed Bootstrap CSS link as it's not used for core layout -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+    <style>
+        /* Keep footer social button styles */
+        footer .social-buttons {
+            display: inline-block;
+            margin: 5px 8px;
+        }
+        footer .social-image-round {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            vertical-align: middle;
+            transition: opacity 0.2s ease-in-out;
+        }
+        footer .social-image-round:hover {
+            opacity: 0.8;
+        }
+          .toggle-button {
+            display: inline-block; 
+            margin-top: 15px; 
+            padding: 8px 18px;
+            background-color: #0056b3; 
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+        .toggle-button:hover {
+            background-color: #004a99; /* Darker blue */
+        }
+        /* Style for the hidden container - initially hidden */
+        .hidden-content {
+            display: none;
+            /* Optional: Add some margin when visible */
+            /* margin-top: 10px; */
+        }
+    </style>
+</head>
+<body>
+    <!-- ===================== PRELOADER START ===================== -->
+    <div id="preloader-container">
+        <!-- Corrected: Removed extra div, logo directly inside -->
+        <img src="assets/images/logo.png" alt="Ch/Senanayaka Central College Logo - Loading...">
+        <!-- Optional: Spinner -->
+        <div class="preloader-spinner"></div>
+    </div>
+    <!-- ===================== PRELOADER END ===================== -->
+
+    <header>
+        <div class="container">
+            <a href="index.html" id="logo-link">
+                 <img src="assets/images/logo.png" alt="Ch/Senanayaka Central College Logo" id="logo"> <!-- Corrected Alt Text -->
+                 <h1>Ch/Senanayaka Central College</h1> <!-- Corrected Casing & Font applied via CSS -->
+            </a>
+            <!-- Added ID to nav for potential JS targeting -->
+            <nav id="main-navigation">
+                <!-- Added ID to ul for potential JS targeting -->
+                <ul id="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="faculty.html">Faculty</a></li>
+                    <li><a href="students.html" class="active">Students</a></li>
+                    <li><a href="parents.html">Parents</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="events.html">Events & News</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <button id="mobile-menu-button" aria-label="Toggle Menu" aria-expanded="false">☰</button> <!-- Added aria-expanded -->
+        </div>
+    </header>
+
+    <main class="container page-padding">
+        <h1>Student Zone</h1>
+        <!-- Make sure to replace [School Name] -->
+        <p>Resources and information specifically for the students of Ch/Senanayaka Central College.</p>
+
+        <section id="timetables">
+            <h2>Class Timetables</h2>
+            <p>Download your respective class timetables for the current term:</p>
+             <ul id="timetable-list"> <!-- Added ID to UL -->
+                <li><a href="assets/downloads/timetable_grade6.pdf" download>Grade 6 Timetable</a></li>
+                <li><a href="assets/downloads/timetable_grade7.pdf" download>Grade 7 Timetable</a></li>
+                <!-- Container for the initially hidden items -->
+                <div class="hidden-content" id="more-timetables">
+                    <li><a href="assets/downloads/timetable_grade8.pdf" download>Grade 8 Timetable</a></li>
+                    <li><a href="assets/downloads/timetable_grade9.pdf" download>Grade 9 Timetable</a></li>
+                    <li><a href="assets/downloads/timetable_grade10.pdf" download>Grade 10 Timetable</a></li>
+                    <li><a href="assets/downloads/timetable_grade11.pdf" download>Grade 11 Timetable</a></li>
+                    <li><a href="assets/downloads/timetable_grade12_arts.pdf" download>Grade 12 Timetable (Arts)</a></li>
+                    <li><a href="assets/downloads/timetable_grade12_science.pdf" download>Grade 12 Timetable (Science)</a></li>
+                    <li><a href="assets/downloads/timetable_grade12_commerce.pdf" download>Grade 12 Timetable (Commerce)</a></li>
+                    <!-- [PLACEHOLDER: Add links for other grades/sections] -->
+                </div>
+            </ul>
+             <!-- The Button -->
+             <button class="toggle-button" id="toggle-timetables-btn" aria-controls="more-timetables" aria-expanded="false">
+                Read More
+             </button>
+             <p style="margin-top: 15px;"><small>(Timetables are subject to change. Please check the notice board for updates or contact your class teacher.)</small></p>
+        </section>
+
+        <hr> <!-- Optional separator -->
+
+        <section id="clubs">
+    <!-- (Content remains the same) -->
+     <h2>Clubs and Activities</h2>
+    <p>Explore your interests and develop new skills by participating in our diverse range of clubs and extracurricular activities:</p>
+    <div class="activity-list">
+        <ul>
+            <li>Debate & MUN Club</li>
+            <li>Science & Robotics Club</li>
+            <li>Eco Club (Environmental Awareness)</li>
+            <li>Literary Club (English/Hindi/Other Languages)</li>
+            <li>Quiz Club</li>
+        </ul>
+         <ul>
+            <li>Drama & Theatre Club</li>
+            <li>Music Club (Vocal & Instrumental)</li>
+            <li>Art & Craft Club</li>
+            <li>Photography Club</li>
+            <li>Community Service / Interact Club</li>
+        </ul>
+         <ul>
+             <li>Sports Teams:</li>
+             <li> - Cricket</li>
+             <li> - Basketball</li>
+             <li> - Football (Soccer)</li>
+             <li> - Badminton</li>
+             <li> - Athletics</li>
+             <li> - [Other sports offered]</li>
+        </ul>
+    </div>
+    <p>Contact the respective club coordinators or the Activities Office ([Coordinator Name/Room No.]) for more information and registration details.</p>
+</section>
+
+<section id="library">
+    <!-- (Content remains the same) -->
+    <h2>Library / Resource Center</h2>
+    <p>Our school library is a hub of knowledge with a wide collection of books, reference materials, magazines, newspapers, and digital resources.</p>
+    <p><strong>Library Timings:</strong> [e.g., 8:00 AM - 4:00 PM on weekdays, 9:00 AM - 1:00 PM on Saturdays]</p>
+    <p><strong>Librarian:</strong> [Librarian's Name]</p>
+    <p>Rules for borrowing books and using library facilities are available in the Student Handbook and displayed in the library.</p>
+</section>
+
+<section id="student-exams">
+    <h2>Exam Schedules & Results</h2>
+    <p>Find upcoming examination schedules and related notices here:</p>
+     <ul>
+         <li><a href="events.html#notices">View Examination Notices & Schedules</a></li>
+     </ul>
+     <!-- Updated text - removed portal mention -->
+    <p>Your individual exam results will be shared through report cards distributed via the school office or during Parent-Teacher Meetings.</p>
+     <p>For details on the examination pattern and assessment methods, refer to the <a href="academics.html#exams">Academics</a> page.</p>
+</section>
+
+ <section id="student-handbook">
+     <!-- (Content remains the same) -->
+      <h2>Student Handbook & Code of Conduct</h2>
+    <p>Familiarize yourself with the school rules, regulations, code of conduct, uniform guidelines, and other important information.</p>
+     <p><a href="assets/downloads/student_handbook_[year].pdf" class="cta-button secondary" download>Download Student Handbook</a></p>
+ </section>
+Use code with caution.
+</main>
+<footer>
+    <div class="container">
+         <p>© <span id="current-year"></span> Ch/Senanayaka Central College. All Rights Reserved.</p>
+         <!-- !!! REPLACE placeholders in footer !!! -->
+         <p>Address: [Your Full School Address] | Phone: <a href="tel:+94XXXXXXXXX">[Your Phone]</a> | Email: <a href="mailto:info@senanayakecc.lk">[Your Email]</a></p>
+         <!-- Corrected Social Media Links -->
+         <div class="footer-social-links">
+             <span class="social-buttons">
+                <!-- Replace # with your actual Facebook page URL -->
+                <a href="#" target="_blank" title="Facebook">
+                    <!-- Ensure image path is correct -->
+                    <img src="assets/images/facebookIcon.png" class="social-image-round" alt="Facebook">
+                </a>
+            </span>
+            <span class="social-buttons">
+                 <!-- Replace # with your actual Twitter page URL -->
+                <a href="#" target="_blank" title="X">
+                    <img src="assets/images/xIcon.png" class="social-image-round" alt="X">
+                </a>
+            </span>
+            <span class="social-buttons">
+                 <!-- Replace # with your actual Google page URL (if applicable) -->
+                <a href="https://www.instagram.com/explore/locations/244733738899520/senanayake-national-college-madampe/recent/" target="_blank" title="Instagram">
+                    <img src="assets/images/InstagramIcon.png" class="social-image-round" alt="Instagram">
+                </a>
+            </span>
+            <span class="social-buttons">
+                 <!-- Replace # with your actual LinkedIn page URL -->
+                <a href="#" target="_blank" title="LinkedIn">
+                    <img src="assets/images/linkedInIcon.png" class="social-image-round" alt="LinkedIn">
+                </a>
+            </span>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/script.js"></script>
+    <!-- Inline script for the toggle button functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggleBtn = document.getElementById('toggle-timetables-btn');
+            const moreTimetablesDiv = document.getElementById('more-timetables');
+
+            if (toggleBtn && moreTimetablesDiv) {
+                toggleBtn.addEventListener('click', () => {
+                    // Check current state based on display style
+                    const isHidden = moreTimetablesDiv.style.display === 'none' || moreTimetablesDiv.style.display === '';
+
+                    if (isHidden) {
+                        // Show the content
+                        moreTimetablesDiv.style.display = 'block'; // Or 'contents' if you prefer direct li flow
+                        toggleBtn.textContent = 'Read Less';
+                        toggleBtn.setAttribute('aria-expanded', 'true');
+                    } else {
+                        // Hide the content
+                        moreTimetablesDiv.style.display = 'none';
+                        toggleBtn.textContent = 'Read More';
+                        toggleBtn.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            } else {
+                console.warn("Timetable toggle button or content div not found.");
+            }
+        });
+    </script>
+
+</body>
+</html>
