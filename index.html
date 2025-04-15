@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Ch/Senanayaka Central College</title>
+
+    <!-- Preconnect for Google Fonts (Recommended for performance) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts Import -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Include other fonts from your style.css if needed directly here -->
+    <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap" rel="stylesheet"> 
+     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Grechen+Fuemen&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet"> 
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    footer .social-buttons {
+            display: inline-block;
+            margin: 5px 8px;
+        }
+        footer .social-image-round {
+            width: 32px; /* Adjust size */
+            height: 32px;
+            border-radius: 50%;
+            vertical-align: middle;
+            transition: opacity 0.2s ease-in-out;
+        }
+        footer .social-image-round:hover {
+            opacity: 0.8;
+        }
+    </style>
+
+</head>
+<body>
+    
+
+    <header>
+        <div class="container">
+            <a href="index.html" id="logo-link">
+                 <img src="assets/images/logo.png" alt="Ch/Senanayaka Central College Logo" id="logo">
+                 <h1>Ch/Senanayaka Central College</h1>
+            </a>
+            <nav>
+                <!-- Added id="main-nav" for better JS targeting -->
+                <ul id="main-nav">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="faculty.html">Faculty</a></li>
+                    <li><a href="students.html">Students</a></li>
+                    <li><a href="parents.html">Parents</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="events.html">Events & News</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+             <button id="mobile-menu-button" aria-label="Toggle Menu" aria-expanded="false">☰</button>
+        </div>
+    </header>
+
+    
+    <main>
+        <section id="hero">
+            <!-- Removed extra container div if hero background covers full width -->
+            <div class="hero-content-wrapper"> <!-- Added wrapper for content positioning -->
+                <h2 class="hero-content typing-effect-container">
+                    <!-- Spans for typing effect -->
+                    <span>Welcome </span>
+                    <span>to </span>
+                    <span>Senanayaka </span>
+                    <span>Central </span>
+                    <span>College</span>
+                    <span class="typing-cursor">|</span>
+                </h2>
+                <p class="hero-content fade-in-after-typing">[Replace this with a brief, engaging welcome message.]</p>
+                <div class="hero-buttons fade-in-after-typing">
+                    <a href="admissions.html" class="cta-button">Apply Now</a>
+                    <a href="contact.html" class="cta-button secondary">Contact Us</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="quick-links" class="container"> <!-- Added container class -->
+             <h2>Quick Access</h2>
+             <div class="quick-links-container">
+                <a href="academics.html#calendar">Academic Calendar</a>
+                <a href="admissions.html">Admission Info</a>
+                <a href="events.html">Upcoming Events</a>
+                <a href="parents.html#policies">Policies & Guidelines</a>
+                <a href="gallery.html">School Gallery</a>
+             </div>
+        </section>
+
+        <section id="news-events" class="container"> <!-- Added container class -->
+            <div class="column">
+                <h2>Latest News & Announcements</h2>
+                <article>
+                    <h3><a href="events.html#news-item-1">Important Update: API SENA</a></h3>
+                    <p>Our organizing committee has created a privacy policy schedule for the participating students..... <a href="events.html#news-item-1">Read More</a></p>
+                    <small>Posted on:  October 26 2025</small>
+                </article>
+                <article>
+                     <h3><a href="events.html#news-item-2">School Reopening Schedule Announced</a></h3>
+                    <p>[Replace with details about reopening dates and procedures for the upcoming term.]... <a href="events.html#news-item-2">Read More</a></p>
+                    <small>Posted on:  October 26 2025</small>
+                </article>
+                 <a href="events.html#news-updates" class="view-all-link">View All News</a>
+            </div>
+            <div class="column">
+                <h2>Upcoming Events</h2>
+                <ul>
+                    <li><strong>[Date]:</strong> Science Fair - <a href="events.html#event-1">Details</a></li>
+                    <li><strong>[Date]:</strong> Parent-Teacher Meeting (Grades 1-5) - <a href="events.html#event-2">Details</a></li>
+                    <li><strong>[Date]:</strong> Annual Sports Day - <a href="events.html#event-3">Details</a></li>
+                </ul>
+                 <a href="events.html#event-calendar" class="view-all-link">View Full Calendar</a>
+            </div>
+        </section>
+
+        <section id="featured-gallery" class="container"> <!-- Added container class -->
+             <h2>School Highlights</h2>
+             <div class="gallery-preview">
+                <!-- Make sure these image paths are correct -->
+                <img src="assets/images/highlight1.jpg" alt="Students actively participating in a classroom session">
+                <img src="assets/images/highlight2.jpg" alt="School cultural event celebration with performers">
+                <img src="assets/images/highlight3.jpg" alt="Students engaged in a sports activity on the field">
+             </div>
+             <a href="gallery.html" class="view-all-link">View Full Gallery</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+             <p>© <span id="current-year"></span> Ch/Senanayaka Central College. All Rights Reserved.</p>
+             <!-- !!! REPLACE placeholders in footer !!! -->
+             <p>Address: Senanayaka Central College/New town  | Phone: <a href="tel:+947732125">+947732125</a> | Email: <a href="mailto:chamikara24sachintha@gmail.com">chamikara24sachintha@gmail.com</a></p>
+             <!-- Corrected Social Media Links -->
+             <div class="footer-social-links">
+                 <span class="social-buttons">
+                    <!-- Replace # with your actual Facebook page URL -->
+                    <a href="#" target="_blank" title="Facebook">
+                        <!-- Ensure image path is correct -->
+                        <img src="assets/images/facebookIcon.png" class="social-image-round" alt="Facebook">
+                    </a>
+                </span>
+                <span class="social-buttons">
+                     <!-- Replace # with your actual Twitter page URL -->
+                    <a href="#" target="_blank" title="X">
+                        <img src="assets/images/xIcon.png" class="social-image-round" alt="X">
+                    </a>
+                </span>
+                <span class="social-buttons">
+                     <!-- Replace # with your actual Google page URL (if applicable) -->
+                    <a href="https://www.instagram.com/explore/locations/244733738899520/senanayake-national-college-madampe/recent/" target="_blank" title="Instagram">
+                        <img src="assets/images/InstagramIcon.png" class="social-image-round" alt="Instagram">
+                    </a>
+                </span>
+                <span class="social-buttons">
+                     <!-- Replace # with your actual LinkedIn page URL -->
+                    <a href="#" target="_blank" title="LinkedIn">
+                        <img src="assets/images/linkedInIcon.png" class="social-image-round" alt="LinkedIn">
+                    </a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript should be linked at the end of the body -->
+    <script src="js/script.js"></script>
+</body>
+</html>

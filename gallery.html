@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - ch/senanayaka central college</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <style>
+    footer .social-buttons {
+            display: inline-block;
+            margin: 5px 8px;
+        }
+        footer .social-image-round {
+            width: 32px; /* Adjust size */
+            height: 32px;
+            border-radius: 50%;
+            vertical-align: middle;
+            transition: opacity 0.2s ease-in-out;
+        }
+        footer .social-image-round:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <!-- ===================== PRELOADER START ===================== -->
+    <div id="preloader-container">
+        <div class="preloader-logo">
+            <!-- Use your school logo -->
+            <img src="assets/images/logo.png" alt="Ch/Senanayaka Central College Logo - Loading...">
+        </div>
+        <!-- Optional: Add a spinner -->
+        <div class="preloader-spinner"></div>
+    </div>
+    <!-- ===================== PRELOADER END ===================== -->
+
+    <header>
+        <div class="container">
+             <a href="index.html" id="logo-link">
+                 <img src="assets/images/logo.png" alt="[School Name] Logo" id="logo">
+                 <h1>ch/Senanayaka central college</h1>
+             </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="faculty.html">Faculty</a></li>
+                    <li><a href="students.html">Students</a></li>
+                    <li><a href="parents.html">Parents</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="events.html">Events & News</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <!-- Login link removed -->
+                </ul>
+            </nav>
+            <button id="mobile-menu-button" aria-label="Toggle Menu">☰</button>
+        </div>
+    </header>
+
+    <main class="container page-padding">
+        <h1>School Gallery</h1>
+        <p>Explore moments captured at [School Name] - showcasing events, activities, infrastructure, and the vibrant life of our students.</p>
+
+        <section id="photo-gallery">
+            <!-- (Content remains the same - Use your images) -->
+            <h2>Photo Gallery</h2>
+            <h3>Events & Celebrations</h3>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                     <a href="assets/images/gallery/large/event1_large.jpg" data-lightbox="events" data-title="Annual Day Performance">
+                        <img src="assets/images/gallery/event1_thumb.jpg" alt="Students performing on stage during Annual Day">
+                    </a>
+                    <p>Annual Day</p>
+                </div>
+                 <div class="gallery-item">
+                     <a href="assets/images/gallery/large/event2_large.jpg" data-lightbox="events" data-title="Science Fair Exhibit">
+                        <img src="assets/images/gallery/event2_thumb.jpg" alt="Students explaining a science project">
+                    </a>
+                    <p>Science Fair</p>
+                </div>
+            </div>
+
+            <h3>Sports Activities</h3>
+             <div class="gallery-grid">
+                 <div class="gallery-item">
+                    <a href="assets/images/gallery/large/sports1_large.jpg" data-lightbox="sports" data-title="Running Race">
+                        <img src="assets/images/gallery/sports1_thumb.jpg" alt="Students participating in a running race on sports day">
+                    </a>
+                    <p>Sports Day Race</p>
+                 </div>
+            </div>
+             <!-- Add more categories and items -->
+        </section>
+
+        <section id="video-gallery">
+            <!-- (Content remains the same - Use your videos) -->
+             <h2>Video Gallery</h2>
+             <div class="gallery-grid video-grid">
+                 <div class="gallery-item video-item">
+                     <h3>Annual Day Highlights [Year]</h3>
+                     <iframe width="560" height="315" src="https://www.youtube.com/embed/[YourYouTubeVideoID1]" title="YouTube video player - Annual Day" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                 </div>
+                  <div class="gallery-item video-item">
+                      <h3>Sports Day Montage [Year]</h3>
+                     <video controls width="100%">
+                         <source src="assets/videos/sports_day_[year].mp4" type="video/mp4">
+                         Your browser does not support the video tag.
+                     </video>
+                 </div>
+             </div>
+        </section>
+    </main>
+
+  
+    <footer>
+        <div class="container">
+             <p>© <span id="current-year"></span> Ch/Senanayaka Central College. All Rights Reserved.</p>
+             <!-- !!! REPLACE placeholders in footer !!! -->
+             <p>Address: [Your Full School Address] | Phone: <a href="tel:+94XXXXXXXXX">[Your Phone]</a> | Email: <a href="mailto:info@senanayakecc.lk">[Your Email]</a></p>
+             <!-- Corrected Social Media Links -->
+             <div class="footer-social-links">
+                 <span class="social-buttons">
+                    <!-- Replace # with your actual Facebook page URL -->
+                    <a href="#" target="_blank" title="Facebook">
+                        <!-- Ensure image path is correct -->
+                        <img src="assets/images/facebookIcon.png" class="social-image-round" alt="Facebook">
+                    </a>
+                </span>
+                <span class="social-buttons">
+                     <!-- Replace # with your actual Twitter page URL -->
+                    <a href="#" target="_blank" title="X">
+                        <img src="assets/images/xIcon.png" class="social-image-round" alt="X">
+                    </a>
+                </span>
+                <span class="social-buttons">
+                     <!-- Replace # with your actual Google page URL (if applicable) -->
+                    <a href="https://www.instagram.com/explore/locations/244733738899520/senanayake-national-college-madampe/recent/" target="_blank" title="Instagram">
+                        <img src="assets/images/InstagramIcon.png" class="social-image-round" alt="Instagram">
+                    </a>
+                </span>
+                <span class="social-buttons">
+                     <!-- Replace # with your actual LinkedIn page URL -->
+                    <a href="#" target="_blank" title="LinkedIn">
+                        <img src="assets/images/linkedInIcon.png" class="social-image-round" alt="LinkedIn">
+                    </a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+     <!-- Add lightbox JS if you implement one -->
+</body>
+</html>
