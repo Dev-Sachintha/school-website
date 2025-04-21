@@ -214,7 +214,7 @@ section::after, .teacher-profile::after, .news-item::after { content: ""; displa
 .gallery-item:hover { box-shadow: 0 5px 15px rgba(0,0,0,0.15); }
 .gallery-item img, .gallery-item video, .gallery-item iframe { max-width: 100%; display: block; margin-bottom: 0; border-radius: 0; aspect-ratio: 4 / 3; object-fit: cover; }
 .gallery-item iframe { height: 210px; width: 100%; }
-.gallery-item p { margin: 0; padding: 10px 12px; font-size: 1rem; color: #333; background-color: #f1f1f1; min-height: 40px; /* Inherits script font */ }
+.gallery-item p { margin: 0; padding: 10px 12px; font-size: 1rem; color: #333; background-color: #ea8686; min-height: 40px; /* Inherits script font */ }
 .gallery-item a { display: block; }
 .video-grid .gallery-item { padding: 10px; }
 .video-item h3 { font-size: 1.3rem; margin-bottom: 10px; text-align: left; padding: 0 5px; }
